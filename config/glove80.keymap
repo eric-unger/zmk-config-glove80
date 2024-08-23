@@ -93,12 +93,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | SPACE  | DEL   | LALT  | | RALT  | BACKSPACE  | ENTER |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2       &kp F3        &kp F4    &kp F5                                                                                                 &kp F6   &kp F7       &kp F8             &kp F9           &kp F10
-&kp EQUAL   &kp N1       &kp N2        &kp N3    &kp N4     &kp N5                                                                              &kp N6  &kp N7   &kp N8       &kp N9             &kp N0           &kp MINUS
-&kp TAB     &kp Q        &kp W         &kp F     &kp P      &kp B                                                                               &kp J   &kp L    &kp U        &kp Y              &kp SEMICOLON    &kp BSLH
-&kp ESC     &kp A        &kp R         &kp S     &kp T      &kp G                                                                               &kp M   &kp N    &kp E        &kp I              &kp O            &kp SQT
-&kp GRAVE   &mt LCTRL Z  &mt LSHIFT X  &lt 2 C   &lt 1 D    &kp V   &kp LSHFT  &kp LCTRL  &lt 3 LEFT_WIN  &lt 3 RWIN  &kp RCTRL      &kp RSHFT  &kp K   &lt 1 H  &lt 2 COMMA  &mt RSHIFT PERIOD  &mt RCTRL SLASH  &kp PG_UP
-&magic 4 0  &kp HOME     &kp END       &kp LEFT  &kp RIGHT          &kp SPACE  &kp DEL    &kp LALT        &kp RALT    &kp BACKSPACE  &kp ENTER          &kp UP   &kp DOWN     &kp LBKT           &kp RBKT         &kp PG_DN
+&kp F1      &kp F2       &kp F3        &kp F4    &kp F5                                                                                       &kp F6   &kp F7       &kp F8             &kp F9           &kp F10
+&kp EQUAL   &kp N1       &kp N2        &kp N3    &kp N4     &kp N5                                                                    &kp N6  &kp N7   &kp N8       &kp N9             &kp N0           &kp MINUS
+&kp TAB     &kp Q        &kp W         &kp F     &kp P      &kp B                                                                     &kp J   &kp L    &kp U        &kp Y              &kp SEMICOLON    &kp BSLH
+&kp ESC     &kp A        &kp R         &kp S     &kp T      &kp G                                                                     &kp M   &kp N    &kp E        &kp I              &kp O            &kp SQT
+&kp GRAVE   &mt LCTRL Z  &mt LSHIFT X  &lt 2 C   &lt 1 D    &kp V   &kp TAB    &mo 3    &kp LWIN  &kp RWIN  &mo 3          &kp ESC    &kp K   &lt 1 H  &lt 2 COMMA  &mt RSHIFT PERIOD  &mt RCTRL SLASH  &kp PG_UP
+&magic 4 0  &kp HOME     &kp END       &kp LEFT  &kp RIGHT          &kp SPACE  &kp DEL  &kp LALT  &kp RALT  &kp BACKSPACE  &kp ENTER          &kp UP   &kp DOWN     &kp LBKT           &kp RBKT         &kp PG_DN
             >;
         };
 
