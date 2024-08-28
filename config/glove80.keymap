@@ -93,12 +93,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | SPACE  | DEL   | LALT  | | RALT  | BACKSPACE  | ENTER |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2       &kp F3        &kp F4    &kp F5                                                                                       &kp F6   &kp F7       &kp F8             &kp F9           &kp F10
-&kp EQUAL   &kp N1       &kp N2        &kp N3    &kp N4     &kp N5                                                                    &kp N6  &kp N7   &kp N8       &kp N9             &kp N0           &kp MINUS
-&caps_word  &kp Q        &kp W         &kp F     &kp P      &kp B                                                                     &kp J   &kp L    &kp U        &kp Y              &kp SEMICOLON    &kp BSLH
-&kp ESC     &kp A        &kp R         &kp S     &kp T      &kp G                                                                     &kp M   &kp N    &kp E        &kp I              &kp O            &kp SQT
-&kp GRAVE   &mt LCTRL Z  &mt LSHIFT X  &lt 2 C   &lt 1 D    &kp V   &kp TAB    &mo 3    &kp LWIN  &kp RWIN  &mo 3          &kp ESC    &kp K   &lt 1 H  &lt 2 COMMA  &mt RSHIFT PERIOD  &mt RCTRL SLASH  &kp PG_UP
-&magic 4 0  &kp HOME     &kp END       &kp LEFT  &kp RIGHT          &kp SPACE  &kp DEL  &kp LALT  &kp RALT  &kp BACKSPACE  &kp ENTER          &kp UP   &kp DOWN     &kp LBKT           &kp RBKT         &kp PG_DN
+&kp F1           &kp F2            &kp F3   &kp F4      &kp F5                                                                                         &kp F6          &kp F7      &kp F8      &kp F9           &kp F10
+&kp EQUAL        &kp N1            &kp N2   &kp N3      &kp N4       &kp N5                                                                    &kp N6  &kp N7          &kp N8      &kp N9      &kp N0           &kp MINUS
+&kp NON_US_HASH  &kp Q             &kp W    &kp F       &kp P        &kp B                                                                     &kp J   &kp L           &kp U       &kp Y       &kp SEMICOLON    &kp NON_US_BACKSLASH
+&kp TAB          &kp A             &kp R    &kp S       &kp T        &kp G                                                                     &kp M   &kp N           &kp E       &kp I       &kp O            &kp SQT
+&kp RCTRL        &mt LEFT_SHIFT Z  &kt X    &kp C       &kp D        &kp V   &kp TAB    &mo 3    &kp LWIN  &kp RWIN  &mo 3          &kp ESC    &kp K   &kp H           &kp COMMA   &kt PERIOD  &mt RSHFT SLASH  &mt RIGHT_CONTROL PAGE_UP
+&magic 4 0       &kp HOME          &kp END  &lt 1 LEFT  &lt 2 RIGHT          &kp SPACE  &kp DEL  &kp LALT  &kp RALT  &kp BACKSPACE  &kp ENTER          &lt 2 UP_ARROW  &lt 1 DOWN  &kp LBKT    &kp RBKT         &kp PG_DN
             >;
         };
 
@@ -130,7 +130,7 @@
 &trans        &none            &none       &none                 &none                  &kp HOME                                                   &kp PRINTSCREEN  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
 &trans        &kp EXCLAMATION  &kp EQUAL   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp END                                                    &kp POUND        &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
 &trans        &kp DOLLAR       &kp MINUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PG_UP                                                  &kt PIPE         &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&trans        &kp K_CMENU      &kp HASH    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PG_DN  &trans  &trans  &to 0   &trans  &trans  &trans  &trans           &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
+&trans        &kp K_CMENU      &kp HASH    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PG_DN  &trans  &trans  &to 0   &trans  &trans  &trans  &caps_word       &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
 &trans        &kp CAPS         &kp INS     &trans                &trans                            &trans  &trans  &trans  &trans  &trans  &trans                   &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
             >;
         };
