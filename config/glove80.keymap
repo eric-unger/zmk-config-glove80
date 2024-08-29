@@ -87,6 +87,46 @@
             bindings = <&kp EQUAL>;
             key-positions = <28 27>;
         };
+
+        exclamation_combo {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <39 40>;
+        };
+
+        underscore_combo {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <51 58>;
+        };
+
+        rshift_combo {
+            bindings = <&kp RSHFT>;
+            key-positions = <41 42>;
+        };
+
+        lshift_combo {
+            bindings = <&kp LSHFT>;
+            key-positions = <38 37>;
+        };
+
+        lctrl_combo {
+            bindings = <&kp LCTRL>;
+            key-positions = <37 36>;
+        };
+
+        rctrl_combo {
+            bindings = <&kp RCTRL>;
+            key-positions = <43 42>;
+        };
+
+        shift_ctrl_combo {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <38 37 36>;
+        };
+
+        rshift_ctrl_combo {
+            bindings = <&kp RS(RCTRL)>;
+            key-positions = <41 42 43>;
+        };
     };
 
     keymap {
@@ -102,12 +142,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | SPACE  | DEL   | LALT  | | RALT  | BACKSPACE  | ENTER |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1           &kp F2            &kp F3   &kp F4      &kp F5                                                                                         &kp F6          &kp F7      &kp F8      &kp F9           &kp F10
-&kp EQUAL        &kp N1            &kp N2   &kp N3      &kp N4       &kp N5                                                                    &kp N6  &kp N7          &kp N8      &kp N9      &kp N0           &kp MINUS
-&kp NON_US_HASH  &kp Q             &kp W    &kp F       &kp P        &kp B                                                                     &kp J   &kp L           &kp U       &kp Y       &kp SEMICOLON    &kp NON_US_BACKSLASH
-&kp TAB          &kp A             &kp R    &kp S       &kp T        &kp G                                                                     &kp M   &kp N           &kp E       &kp I       &kp O            &kp SQT
-&kp RCTRL        &mt LEFT_SHIFT Z  &kp X    &kp C       &kp D        &kp V   &kp TAB    &mo 3    &kp LWIN  &kp RWIN  &mo 3          &kp ESC    &kp K   &kp H           &kp COMMA   &kp PERIOD  &mt RSHFT SLASH  &mt RIGHT_CONTROL PAGE_UP
-&magic 4 0       &kp HOME          &kp END  &lt 1 LEFT  &lt 2 RIGHT          &kp SPACE  &kp DEL  &kp LALT  &kp RALT  &kp BACKSPACE  &kp ENTER          &lt 2 UP_ARROW  &lt 1 DOWN  &kp LBKT    &kp RBKT         &kp PG_DN
+&kp F1           &kp F2    &kp F3   &kp F4      &kp F5                                                                                         &kp F6          &kp F7      &kp F8      &kp F9         &kp F10
+&kp EQUAL        &kp N1    &kp N2   &kp N3      &kp N4       &kp N5                                                                    &kp N6  &kp N7          &kp N8      &kp N9      &kp N0         &kp MINUS
+&kp NON_US_HASH  &kp Q     &kp W    &kp F       &kp P        &kp B                                                                     &kp J   &kp L           &kp U       &kp Y       &kp SEMICOLON  &kp NON_US_BACKSLASH
+&kp TAB          &kp A     &kp R    &kp S       &kp T        &kp G                                                                     &kp M   &kp N           &kp E       &kp I       &kp O          &kp SQT
+&kp GRAVE        &kp Z     &kp X    &kp C       &kp D        &kp V   &kp TAB    &mo 3    &kp LWIN  &kp RWIN  &mo 3          &kp ESC    &kp K   &kp H           &kp COMMA   &kp PERIOD  &kp SLASH      &kp PAGE_UP
+&magic 4 0       &kp HOME  &kp END  &lt 1 LEFT  &lt 2 RIGHT          &kp SPACE  &kp DEL  &kp LALT  &kp RALT  &kp BACKSPACE  &kp ENTER          &lt 2 UP_ARROW  &lt 1 DOWN  &kp LBKT    &kp RBKT       &kp PG_DN
             >;
         };
 
