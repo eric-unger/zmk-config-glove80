@@ -30,7 +30,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 3>, <&to 3>;
+            bindings = <&mo 1>, <&to 1>;
         };
 
         magic: magic_hold_tap {
@@ -97,56 +97,6 @@
             bindings = <&kp UNDERSCORE>;
             key-positions = <51 58>;
         };
-
-        rshift_combo {
-            bindings = <&kp RSHFT>;
-            key-positions = <41 42>;
-        };
-
-        lshift_combo {
-            bindings = <&kp LSHFT>;
-            key-positions = <38 37>;
-        };
-
-        lctrl_combo {
-            bindings = <&kp LCTRL>;
-            key-positions = <37 36>;
-        };
-
-        rctrl_combo {
-            bindings = <&kp RCTRL>;
-            key-positions = <43 42>;
-        };
-
-        shift_ctrl_combo {
-            bindings = <&kp LS(LCTRL)>;
-            key-positions = <38 37 36>;
-        };
-
-        rshift_ctrl_combo {
-            bindings = <&kp RS(RCTRL)>;
-            key-positions = <41 42 43>;
-        };
-
-        l_number_layer_combo {
-            bindings = <&mo 1>;
-            key-positions = <50 49>;
-        };
-
-        r_number_layer_combo {
-            bindings = <&mo 1>;
-            key-positions = <59 60>;
-        };
-
-        l_functions_layer {
-            bindings = <&mo 2>;
-            key-positions = <48 49>;
-        };
-
-        r_functions_layer_combo {
-            bindings = <&mo 2>;
-            key-positions = <60 61>;
-        };
     };
 
     keymap {
@@ -162,34 +112,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | SPACE  | DEL   | LALT  | | RALT  | BACKSPACE  | ENTER |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1           &kp F2    &kp F3   &kp F4    &kp F5                                                                                       &kp F6        &kp F7     &kp F8      &kp F9         &kp F10
-&kp EQUAL        &kp N1    &kp N2   &kp N3    &kp N4     &kp N5                                                                    &kp N6  &kp N7        &kp N8     &kp N9      &kp N0         &kp MINUS
-&kp NON_US_HASH  &kp Q     &kp W    &kp F     &kp P      &kp B                                                                     &kp J   &kp L         &kp U      &kp Y       &kp SEMICOLON  &kp NON_US_BACKSLASH
-&kp TAB          &kp A     &kp R    &kp S     &kp T      &kp G                                                                     &kp M   &kp N         &kp E      &kp I       &kp O          &kp SQT
-&kp GRAVE        &kp Z     &kp X    &kp C     &kp D      &kp V   &kp TAB    &mo 3    &kp LWIN  &kp RWIN  &mo 3          &kp ESC    &kp K   &kp H         &kp COMMA  &kp PERIOD  &kp SLASH      &kp PAGE_UP
-&magic 4 0       &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp SPACE  &kp DEL  &kp LALT  &kp RALT  &kp BACKSPACE  &kp ENTER          &kp UP_ARROW  &kp DOWN   &kp LBKT    &kp RBKT       &kp PG_DN
-            >;
-        };
-
-        numbers {
-            bindings = <
-&trans     &trans        &trans        &trans        &trans                                                                              &trans  &trans  &trans  &trans  &trans
-&trans     &trans        &trans        &trans        &trans        &trans                                                  &trans        &trans  &trans  &trans  &trans  &trans
-&trans     &trans        &trans        &trans        &trans        &trans                                                  &trans        &trans  &trans  &trans  &trans  &trans
-&kt EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                                  &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS
-&trans     &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans
-&trans     &trans        &trans        &trans        &trans                &trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        functions {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans   &trans   &trans
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                                                  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&kp F1      &kp F2    &kp F3   &kp F4    &kp F5                                                                                                                &kp F6        &kp F7     &kp F8      &kp F9         &kp F10
+&kp EQUAL   &kp N1    &kp N2   &kp N3    &kp N4     &kp N5                                                                                             &kp N6  &kp N7        &kp N8     &kp N9      &kp N0         &kp MINUS
+&kp TAB     &kp Q     &kp W    &kp F     &kp P      &kp B                                                                                              &kp J   &kp L         &kp U      &kp Y       &kp SEMICOLON  &kp NON_US_BACKSLASH
+&kp ESCAPE  &kp A     &kp R    &kp S     &kp T      &kp G                                                                                              &kp M   &kp N         &kp E      &kp I       &kp O          &kp SQT
+&kp GRAVE   &kp Z     &kp X    &kp C     &kp D      &kp V   &kp LSHIFT  &kp LEFT_CONTROL  &layer_td  &kp LEFT_WIN  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp K   &kp H         &kp COMMA  &kp PERIOD  &kp SLASH      &kp PAGE_UP
+&magic 2 0  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp SPACE   &kp DEL           &kp LALT   &kp RALT      &kp BACKSPACE      &kp ENTER                &kp UP_ARROW  &kp DOWN   &kp LBKT    &kp RBKT       &kp PG_DN
             >;
         };
 
@@ -200,7 +128,7 @@
 &trans        &kp EXCLAMATION  &kp EQUAL   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp END                                                    &kp UNDERSCORE   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
 &trans        &kp DOLLAR       &kp MINUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PG_UP                                                  &kt PIPE         &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
 &trans        &kp K_CMENU      &kp HASH    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PG_DN  &trans  &trans  &to 0   &trans  &trans  &trans  &caps_word       &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans        &kp CAPS         &kp INS     &trans                &trans                            &trans  &trans  &trans  &trans  &trans  &trans                   &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
+&trans        &kp CAPS         &kp INS     &trans                &kp NON_US_HASH                   &trans  &trans  &trans  &trans  &trans  &trans                   &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
             >;
         };
 
@@ -211,7 +139,7 @@
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
 &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 5
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 3
             >;
         };
 
