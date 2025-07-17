@@ -82,19 +82,14 @@
     combos {
         compatible = "zmk,combos";
 
-        equal_combo {
-            bindings = <&kp EQUAL>;
-            key-positions = <28 27>;
+        layer1 {
+            bindings = <&tog 1>;
+            key-positions = <0 9>;
         };
 
-        exclamation_combo {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <39 40>;
-        };
-
-        underscore_combo {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <51 58>;
+        layer0 {
+            bindings = <&to 0>;
+            key-positions = <1 8>;
         };
     };
 
@@ -122,11 +117,11 @@
 
         colemac-dh {
             bindings = <
-&trans     &trans      &trans          &trans       &trans                                                                              &trans        &trans       &trans          &trans      &trans
-&trans     &trans      &trans          &trans       &trans        &trans                                                        &trans  &trans        &trans       &trans          &trans      &trans
+&none      &none       &trans          &trans       &trans                                                                              &trans        &trans       &trans          &trans      &trans
+&none      &trans      &trans          &trans       &trans        &trans                                                        &trans  &trans        &trans       &trans          &trans      &trans
 &kp TAB    &kp Q       &kp W           &kp F        &kp P         &kp B                                                         &kp J   &kp L         &kp U        &kp Y           &kp SEMI    &kp NON_US_HASH
 &kp ESC    &mt LGUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T  &kp G                                                         &kp M   &mt LSHIFT N  &mt LCTRL E  &mt LEFT_ALT I  &mt LWIN O  &kp APOS
-&kp GRAVE  &kp Z       &kp X           &kp C        &kp D         &kp V   &trans     &trans  &trans  &trans  &trans  &trans     &kp K   &kp H         &kp COMMA    &kp DOT         &kp FSLH    &trans
+&kp GRAVE  &kp Z       &kp X           &kp C        &kp D         &kp V   &trans     &trans  &trans  &trans  &trans  &trans     &kp K   &kp H         &kp COMMA    &kp DOT         &kp FSLH    &lt 2 NON_US_BSLH
 &trans     &trans      &trans          &trans       &trans                &kp SPACE  &trans  &trans  &trans  &trans  &kp ENTER          &trans        &trans       &trans          &trans      &trans
             >;
         };
